@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Quote Search App</title>
+  
+  </head>
+  <body style="background-color: #312950">
+
+       <!--- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> -->
+          <div class="container">
+            <h1 style="color: #888811 !important"> QSPD </h1>
+            <br>
+            <label for="basic-url" style="color: #888811 !important">Start searching right away</label>
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-4">
+                
+    <div class="input-group">
+    <span class="input-group-addon" id="basic-addon3">Movie</span>
+    
+<form action="/ans/" method="POST">{% csrf_token %}
+    <input type="text" class="form-control" id="movie-name" name="moviename" value="{{moviename}}" aria-describedby="basic-addon3">
+    </div>
+            </div>
+            <div class="col-lg-8">
+                
+    <div class="input-group">
+      <input type="text" class="form-control" name="searchterm" placeholder="Search for dialouge with term..." value="{{searchterm}}">
+      <span class="input-group-btn">
+        <input type="submit" class="btn btn-primary " value="Go" id="go-find-quote" >
+      </span>
+    </div>
+  </div>
+  </form>
+        </div>
+       
+        </div>
+  </body>
+</html>

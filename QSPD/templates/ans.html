@@ -1,0 +1,16 @@
+<form action="/ans.html" method="post">
+      {% csrf_token %}
+      {{ form }}
+        <div> 
+        
+        <h3> {{moviename}}</h3>
+        <div>
+            {% block content %}
+            {% for qots in result %}
+            <p>{{ qots }}</p>
+            {% endfor %}
+            {% endblock %}
+        </div>
+    </div>
+  
+</form> 
