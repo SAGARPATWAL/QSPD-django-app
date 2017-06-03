@@ -7,6 +7,6 @@ Enter the **Movie**, and search for the dialouge with any **term** that you thin
 
 **Example**
 
-![Alt text](1.png?raw=true "qtsearchapp/Search")
+![Alt text](qtsearchapp/1.png?raw=true "Search")
 
-![Alt text](2.png?raw=true "qtsearchapp/Result")
+![Alt text](qtsearchapp/2.png?raw=true "Result")
